@@ -1,0 +1,34 @@
+generator.FWG=Fun World Gen
+
+gui.selectGenerator=Select a world generator:
+gui.generatorSettings=Generator settings:
+gui.copystring=Copy generator-settings to Clipboard
+
+fwg.ISLAND=Survival Island
+fwg.SKYLAND=Survival Skyland
+fwg.CAVE=Survival Cave
+fwg.SKYBLOCK=Skyblock
+fwg.SKYDIM=Sky Dimension
+fwg.CAVEDIM=Cave Dimension
+fwg.PLANET=Planetoids
+
+fwg.biomes.biomes=Biomes
+fwg.biomes.original=Original
+fwg.biomes.vanilla=Vanilla
+fwg.biomes.all=Vanilla + Mods
+
+fwg.setting.size=Size
+fwg.setting.small=Small
+fwg.setting.default=Default
+fwg.setting.large=Large
+fwg.setting.water=Water
+fwg.setting.on=ON
+fwg.setting.off=OFF
+fwg.setting.theme=Theme
+fwg.setting.type=Type
+
+fwg.theme.default=Default
+fwg.theme.snow=Snow
+fwg.theme.jungle=Jungle
+fwg.theme.tropical=Tropical
+fwg.theme.paradise=Paradise
