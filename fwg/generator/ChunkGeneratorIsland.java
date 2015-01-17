@@ -737,7 +737,7 @@ public class ChunkGeneratorIsland implements IChunkProvider
                 Block b = world.getBlock(var12 + var7, var14 - 1, var13 + var8);
                 if (this.world.func_147478_e(var12 + var7, var14, var13 + var8, false) && b != Blocks.ice && b != Blocks.water)
                 {
-                    this.world.setBlock(var12 + var7, var14, var13 + var8, Blocks.snow, 0, 2);
+                    this.world.setBlock(var12 + var7, var14, var13 + var8, Blocks.snow_layer, 0, 2);
                 }	
             }
         }	
