@@ -14,7 +14,7 @@ import fwg.data.Planets;
 import fwg.support.Support;
 import fwg.world.WorldTypeFWG;
 
-@Mod(modid="FWG", name="FunWorldGen", version="1.0.1")
+@Mod(modid="FWG", name="FunWorldGen", version="1.0.2")
 public class FWG
 {	
 	@Instance("FWG")

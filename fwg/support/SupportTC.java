@@ -1,6 +1,5 @@
 package fwg.support;
 
-import extrabiomes.api.BiomeManager;
 import net.minecraft.world.biome.BiomeGenBase;
 
 public class SupportTC 
