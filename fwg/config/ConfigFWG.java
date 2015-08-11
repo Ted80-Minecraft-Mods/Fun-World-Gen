@@ -1,12 +1,14 @@
 package fwg.config;
 
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import fwg.generatortype.GeneratorType;
 import net.minecraftforge.common.config.Configuration;
 
 public class ConfigFWG
 {
 	public static Configuration config;
 	public static int[] biomeIDs = new int[3];
+	public static String defaultGen;
 	
 	public static void init(FMLPreInitializationEvent event)
 	{
@@ -24,6 +26,14 @@ public class ConfigFWG
 			biomeIDs[0] = config.get("Biome IDs", "Default 1", 185).getInt();
 			biomeIDs[1] = config.get("Biome IDs", "Default 2", 186).getInt();
 			biomeIDs[2] = config.get("Biome IDs", "Default Snow", 187).getInt();
+			
+			defaultGen = config.get( "Generator", "default-setting", "SKYDIM#1" ).getString();
+	
+			//if setting doesn't exists set to default
+			if( GeneratorType.exists( defaultGen ) == false )
+			{
+				defaultGen = "SKYDIM#1";
+			}
 		}
 		catch (Exception e) 
 		{
