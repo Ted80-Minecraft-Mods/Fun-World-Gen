@@ -1,6 +1,7 @@
 package fwg.generatortype;
 
 import fwg.biomes.BiomeList;
+import fwg.data.DecodeGeneratorString;
 import fwg.gui.GuiGeneratorSettings;
 import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
@@ -112,5 +113,19 @@ public class GeneratorType
 			}
 		}
 		return 0;
+	}
+	
+	public static boolean exists( String gen )
+	{
+		DecodeGeneratorString.decode( gen );
+		
+		if( ( currentGenerator != null ) && ( currentSettings != null ) ) 
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
 }

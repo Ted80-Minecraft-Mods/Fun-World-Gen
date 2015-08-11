@@ -2,6 +2,7 @@ package fwg.gui;
 
 import java.util.ArrayList;
 
+import fwg.config.ConfigFWG;
 import fwg.data.DecodeGeneratorString;
 import fwg.generatortype.GeneratorType;
 import net.minecraft.client.gui.GuiButton;
@@ -270,7 +271,7 @@ public class GuiGeneratorSettings extends GuiScreen
 		}
 		else
 		{
-			return "SKYDIM#1";
+			return ConfigFWG.defaultGen;
 		}
 	}
 }

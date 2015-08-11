@@ -3,6 +3,7 @@ package fwg.world;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import fwg.biomes.BiomeList;
+import fwg.config.ConfigFWG;
 import fwg.data.DecodeGeneratorString;
 import fwg.generatortype.GeneratorType;
 import fwg.gui.GuiGeneratorSettings;
@@ -33,7 +34,7 @@ public class WorldTypeFWG extends WorldType
 			}
 			else
 			{
-				DecodeGeneratorString.decode("SKYDIM#1");
+				DecodeGeneratorString.decode( ConfigFWG.defaultGen );
 			}
 			return GeneratorType.currentGenerator.getServerWorldChunkManager(world);
 		}
